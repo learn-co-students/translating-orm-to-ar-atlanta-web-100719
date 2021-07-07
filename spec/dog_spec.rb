@@ -1,8 +1,10 @@
 require "spec_helper"
 require "pry"
 
-describe "Dog" do
 
+
+
+describe "Dog" do
   let(:teddy) {Dog.new(name: "Teddy", breed: "cockapoo")}
 
   before do
@@ -22,6 +24,7 @@ describe "Dog" do
       dog = Dog.new({name: "Fido", breed: "lab"})
       expect(dog.name).to eq("Fido")
       expect(dog.breed).to eq("lab")
+     
     end
   end
 
